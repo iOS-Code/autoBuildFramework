@@ -14,9 +14,9 @@ lipo -create /XXX /XXX -output /XXX
 lipo -info
 
 ## 常见问题
-1、制作framework或者lib时，如果使用了category需要在该工程中 other linker flags 添加 -ObjC -all_load
-2、图片资源需要打包成Bundle，和Framework共同引入项目中使用
-3、新建文件的Target选中Demo工程跟打包脚本的Target
+#### 1、制作framework或者lib时，如果使用了category需要在该工程中 other linker flags 添加 -ObjC -all_load
+#### 2、图片资源需要打包成Bundle，和Framework共同引入项目中使用
+#### 3、新建文件的Target选中Demo工程跟打包脚本的Target
 
 ## 其他说明
 #### －ObjC
