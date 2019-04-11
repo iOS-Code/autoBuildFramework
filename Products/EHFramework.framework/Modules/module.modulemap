@@ -1,0 +1,6 @@
+framework module EHFramework {
+  umbrella header "EHFramework.h"
+
+  export *
+  module * { export * }
+}
