@@ -3,14 +3,15 @@
 
 ## 注意事项
 以下纯个人设置，大家可以忽略，看项目需求
-Dead Code Stripping 设置为NO
-Mach-O Type 设置为 Static Library
-Architectures 增加 armv7s
+#### Dead Code Stripping 设置为NO
+#### Mach-O Type 设置为 Static Library
+#### Architectures 增加 armv7s
 
 ## 手动命令
-合并
+#### 合并
 lipo -create /XXX /XXX -output /XXX
-查看架构
+#### 查看架构
+lipo -info
 
 ## 常见问题
 1、制作framework或者lib时，如果使用了category需要在该工程中 other linker flags 添加 -ObjC -all_load
